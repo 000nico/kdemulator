@@ -4,3 +4,5 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+iced-x86 = "1.21.0"         # native disassembler for hooking
+unicorn-engine = "2.1.5"    # core emulator
