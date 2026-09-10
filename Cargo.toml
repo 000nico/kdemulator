@@ -1,3 +1,0 @@
-[workspace]
-members = ["emu-cli","emu-core", "emu-py"]
-resolver = "2"

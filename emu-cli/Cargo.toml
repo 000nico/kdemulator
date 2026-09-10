@@ -1,9 +1,0 @@
-[package]
-name = "emu-cli"
-version = "0.1.0"
-edition = "2024"
-
-[dependencies]
-clap = "4.6.6"        # argument parsing
-crossterm = "0.29.0"  # manages the terminal and captures the keyboard in real time
-ratatui = "0.30.2"    # cli interface

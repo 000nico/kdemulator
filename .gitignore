@@ -45,6 +45,8 @@ env/
 # --- Logs ---
 *.log
 /logs/
+.cache/
+build/
 
 # --- Editor / IDE ---
 .vscode/
