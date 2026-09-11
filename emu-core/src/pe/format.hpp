@@ -1,3 +1,4 @@
+#include <vector>
 #pragma pack(push, 1)
 
 // DOS MZ Header 
@@ -150,7 +151,8 @@ struct PE {
     IMAGE_DOS_HEADER image_dos_header;
     IMAGE_FILE_HEADER image_file_header;
     IMAGE_OPTIONAL_HEADER image_optional_header;
-    IMAGE_SECTION_HEADER* image_section_header;
+    std::vector<IMAGE_SECTION_HEADER> sections;
+    std::vector<uint8_t> raw_data;
 };
 
 #pragma pack(pop)

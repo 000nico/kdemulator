@@ -1,12 +1,16 @@
+#include "../pe/PEManager.hpp"
 #include "../memory/memory.hpp"
-#include "../cpu/CPU.hpp"
+#include "../debug/Debug.hpp"
 
 class Emulator {
     public: 
         Emulator(CPU* cpu);
+        bool load_driver(PE* pe);
         
     private:
         Stack stack;
         Heap heap;
         CPU* cpu;
+        PEManager pe_manager;
+        Debug debug;
 };
