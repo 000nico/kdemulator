@@ -1,10 +1,13 @@
 #include <string>
-#include <vector>
+
+#include "LogLevel.hpp"
 
 class Debug {
     public:
-        void debug_msg(std::string msg);
+        void init(const std::string& log_path);
+        void shutdown();
+        void debug_msg(std::string msg, LogLevel level);
 
     private:
-        std::vector<std::string> logs;
+        static inline FILE* log_file = nullptr;
 };
