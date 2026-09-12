@@ -5,7 +5,9 @@
 class Emulator {
     public: 
         Emulator(CPU* cpu);
+        
         bool load_driver(PE* pe);
+        bool start(PE* pe);
         
         void handle_hook_trap();
         

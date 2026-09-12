@@ -1,5 +1,9 @@
 #pragma once
-#include "../cpu/cpu.hpp"
+
+#include "hook.hpp"
+#include "../cpu/CPU.hpp"
+
+#include <vector>
 #include <cstdint>
 #include <unicorn/unicorn.h>
 
@@ -28,12 +32,15 @@ class UnicornEngine : public CPU {
 
         // perms
         int to_uc_prot(uint32_t prot);
+
+        // hook
+        bool add_code_hook(uint64_t begin, uint64_t end, CodeHookFn callback, void* user_data) = 0;
         
         // execution
         CpuStatus step_cpu() = 0;
-    
-        bool start();
+        bool start(uintptr_t address) = 0;
     
     private:
         uc_engine* uc;
+        std::vector<HookContext*> hooks;
 };

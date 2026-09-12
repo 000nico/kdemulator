@@ -11,3 +11,11 @@ CpuStatus UnicornEngine::step_cpu(){
     
     return CpuStatus::OK;
 }
+
+bool UnicornEngine::start(uintptr_t address){
+    this->set_register(REG_RIP, address);
+
+    // setup stack
+    this->set_register(REG_RSP, STACK_BASE - STACK_SIZE - 0x1000);
+    return uc_emu_start(this->uc, address, 0, 0, 0) == UC_ERR_OK;
+}

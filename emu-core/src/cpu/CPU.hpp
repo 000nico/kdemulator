@@ -1,6 +1,11 @@
+#pragma once
 #include "registers.hpp"
 #include "status.hpp"
 #include <cstdint>
+
+class CPU;
+
+using CodeHookFn = void(*)(CPU* cpu, uint64_t address, void* user_data);
 
 class CPU {
     public:
@@ -26,8 +31,10 @@ class CPU {
 
         // cpu
         virtual CpuStatus step_cpu() = 0;
-        
-        virtual bool start() = 0;
+        virtual bool start(uintptr_t address) = 0;
+
+        // hooking
+        virtual bool add_code_hook(uint64_t begin, uint64_t end, CodeHookFn callback, void* user_data) = 0;
 
     private:
         CpuStatus status;
