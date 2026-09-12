@@ -22,7 +22,6 @@ Element build_layout(const RegisterSnapshot& regs, const std::vector<std::string
         text("Name: example.sys"),
         text("Base: 0x0000000140000000"),
         text("Entry: 0x0000000140001000"),
-        text("Sections: 5"),
     }));
 
     auto top_row = hbox({
