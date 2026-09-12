@@ -7,10 +7,18 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)  # para que VSCode tenga buen IntelliSense
 
 set(UNICORN_DIR ${CMAKE_SOURCE_DIR}/emu-core/external/unicorn)
 
+# --- FTXUI (se descarga y compila con tu mismo compilador, evita problemas de ABI) ---
+include(FetchContent)
+FetchContent_Declare(
+  ftxui
+  GIT_REPOSITORY https://github.com/ArthurSonzogni/FTXUI.git
+  GIT_TAG v5.0.0
+)
+FetchContent_MakeAvailable(ftxui)
+
 file(GLOB_RECURSE CORE_SRCS "emu-core/src/*.cpp")
 file(GLOB_RECURSE PY_SRCS   "emu-py/src/*.cpp")
-file(GLOB_RECURSE CLI_SRCS  "emu-cli/*.cpp" "emu-cli/src/*.cpp")
-
+file(GLOB_RECURSE CLI_SRCS "emu-cli/*.cpp")
 add_executable(kdemulator
     ${CORE_SRCS}
     ${PY_SRCS}
@@ -29,6 +37,9 @@ target_link_directories(kdemulator PRIVATE
 
 target_link_libraries(kdemulator PRIVATE
     unicorn
+    ftxui::screen
+    ftxui::dom
+    ftxui::component
 )
 
 add_custom_command(TARGET kdemulator POST_BUILD

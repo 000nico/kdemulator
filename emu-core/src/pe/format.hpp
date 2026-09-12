@@ -1,4 +1,5 @@
 #include <vector>
+#include <cstdint>
 
 #define IMAGE_SCN_MEM_EXECUTE 0x20000000
 #define IMAGE_SCN_MEM_READ    0x40000000

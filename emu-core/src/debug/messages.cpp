@@ -1,5 +1,14 @@
 #include "Debug.hpp"
 #include "LogLevel.hpp"
+#include <ctime>
+
+std::string getTimestamp() {
+    time_t now = time(nullptr);
+    char buf[32];
+    strftime(buf, sizeof(buf), "%H:%M:%S", localtime(&now));
+    return std::string(buf);
+}
+
 
 std::string getPrefix(LogLevel level) {
     switch(level) {
@@ -23,11 +32,12 @@ std::string getColor(LogLevel level) {
 void Debug::debug_msg(std::string msg, LogLevel level){
     std::string prefix = getPrefix(level);
     std::string color = getColor(level);
+    std::string timestamp = getTimestamp();
     printf("%s", (color + prefix + msg).c_str());
 
     // persistance
     if(this->log_file){
-        fprintf(log_file, "%s%s\n", prefix.c_str(), msg.c_str());
+        fprintf(log_file, "[%s] %s%s\n", timestamp.c_str(), prefix.c_str(), msg.c_str());
         fflush(log_file);
     }
 }

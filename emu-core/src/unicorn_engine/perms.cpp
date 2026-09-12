@@ -1,4 +1,5 @@
 #include "UnicornEngine.hpp"
+#include "../cpu/perms.hpp"
 
 int UnicornEngine::to_uc_prot(uint32_t prot){
     int result = UC_PROT_NONE;

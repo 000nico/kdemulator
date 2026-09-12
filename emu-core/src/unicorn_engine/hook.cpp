@@ -1,4 +1,3 @@
-#pragma once
 #include "UnicornEngine.hpp"
 #include "hook.hpp"
 
