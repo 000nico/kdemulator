@@ -24,6 +24,8 @@ class UnicornEngine : public CPU {
         bool mem_map(uintptr_t address, size_t size) = 0;
         bool mem_write(uintptr_t address, void* data, size_t size) = 0;
         bool mem_read(uintptr_t address, void* buffer, size_t size) = 0;
+
+        CpuStatus step_cpu() = 0;
     
         bool start();
     

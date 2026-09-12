@@ -7,6 +7,8 @@ class Emulator {
         Emulator(CPU* cpu);
         bool load_driver(PE* pe);
         
+        void handle_hook_trap();
+        
     private:
         Stack stack;
         Heap heap;

@@ -147,6 +147,11 @@ struct IMAGE_IMPORT_DESCRIPTOR {
     unsigned long  FirstThunk;                  // +10
 };
 
+typedef struct _IMAGE_BASE_RELOCATION {
+    unsigned long VirtualAddress; // Offset (RVA) of the mem page (ex. 0x1000)
+    unsigned long SizeOfBlock;    // size of this block
+} IMAGE_BASE_RELOCATION;
+
 struct PE {
     IMAGE_DOS_HEADER image_dos_header;
     IMAGE_FILE_HEADER image_file_header;

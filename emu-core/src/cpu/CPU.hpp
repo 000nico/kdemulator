@@ -1,4 +1,5 @@
 #include "registers.hpp"
+#include "status.hpp"
 #include <cstdint>
 
 class CPU {
@@ -22,5 +23,11 @@ class CPU {
         virtual bool mem_write(uintptr_t address, void* data, size_t size) = 0;
         virtual bool mem_read(uintptr_t address, void* buffer, size_t size) = 0;
 
+        // cpu
+        virtual CpuStatus step_cpu() = 0;
+        
         virtual bool start() = 0;
+
+    private:
+        CpuStatus status;
 };
