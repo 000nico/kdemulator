@@ -1,10 +1,15 @@
 #include "PEManager.hpp"
 #include "../memory/layout.hpp"
+#include "../cpu/perms.hpp"
 #include <cstdint>
 #include <span>
 
+uint64_t align_up(uint64_t value, uint64_t alignment) {
+    return (value + alignment - 1) & ~(alignment - 1);
+}
+
 bool load_headers(CPU* cpu, PE pe, uintptr_t address){
-    if(!cpu->mem_map(address, pe.image_optional_header.SizeOfImage)) return false;
+    if(!cpu->mem_map(address, pe.image_optional_header.SizeOfImage, PROT_ALL)) return false;
 
     // write headers
     uintptr_t map_in_addr = address;
@@ -62,10 +67,10 @@ bool resolve_reloc(CPU* cpu, PE pe, uintptr_t address){
         if(blockHeader.SizeOfBlock == 0) break; // reached the end
 
         // immediatly after the header there is the block data
-        size_t entryAmount = (blockHeader.SizeOfBlock - sizeof(IMAGE_BASE_RELOCATION)) / sizeof(uint16_t);
+        size_t entry_amount = (blockHeader.SizeOfBlock - sizeof(IMAGE_BASE_RELOCATION)) / sizeof(uint16_t);
         uintptr_t entriesStartAddr = currentBlockAddr + sizeof(IMAGE_BASE_RELOCATION);
         
-        for(size_t i = 0; i < entryAmount; i++){
+        for(size_t i = 0; i < entry_amount; i++){
             // every entry is a 16 bits // WORD
             uint16_t entry;
             if(!cpu->mem_read(entriesStartAddr + (i * sizeof(uint16_t)), &entry,sizeof(uint16_t))) return false;
@@ -83,20 +88,20 @@ bool resolve_reloc(CPU* cpu, PE pe, uintptr_t address){
             // 32 bit relocation, modify an unsigned int value of 32 bits
             else if (type == 3) {
                 
-                uint32_t newValue = 0;
-                if(!cpu->mem_read(addr_to_patch, &newValue, sizeof(uint32_t))) return false;
+                uint32_t new_value = 0;
+                if(!cpu->mem_read(addr_to_patch, &new_value, sizeof(uint32_t))) return false;
     
-                newValue += address - pe.image_optional_header.ImageBase;
-                if(!cpu->mem_write(addr_to_patch, &newValue, sizeof(uint32_t))) return false;
+                new_value += address - pe.image_optional_header.ImageBase;
+                if(!cpu->mem_write(addr_to_patch, &new_value, sizeof(uint32_t))) return false;
             }
     
             // 64 bit relocation. modify an unsigned int value of 64 bits
             else if (type == 10) {
-                uint64_t newValue = 0;
-                if(!cpu->mem_read(addr_to_patch, &newValue, sizeof(uint64_t))) return false;
+                uint64_t new_value = 0;
+                if(!cpu->mem_read(addr_to_patch, &new_value, sizeof(uint64_t))) return false;
     
-                newValue += address - pe.image_optional_header.ImageBase;
-                if(!cpu->mem_write(addr_to_patch, &newValue, sizeof(uint64_t))) return false;
+                new_value += address - pe.image_optional_header.ImageBase;
+                if(!cpu->mem_write(addr_to_patch, &new_value, sizeof(uint64_t))) return false;
             }
         }
         // next block
@@ -131,7 +136,7 @@ bool resolveIatWithHookTrap(CPU* cpu, PE pe, uintptr_t address){
             if(!cpu->mem_read(address + iatAddr + (j * sizeof(uint64_t)), &currentAddr, sizeof(uint64_t))) return false;
             if(currentAddr == 0) break;
             
-            if(cpu->mem_write(address + iatAddr + (j * sizeof(uint64_t)), &hook, sizeof(uint64_t))) return false;
+            if(!cpu->mem_write(address + iatAddr + (j * sizeof(uint64_t)), &hook, sizeof(uint64_t))) return false;
             j++;
         }
         
@@ -146,12 +151,36 @@ bool resolveIat(CPU* cpu, PE pe, uintptr_t address){
     return true;
 }
 
+uint32_t section_to_prot(uint32_t characteristics) {
+    uint32_t prot = PROT_NONE;
+    if (characteristics & IMAGE_SCN_MEM_READ)    prot |= PROT_READ;
+    if (characteristics & IMAGE_SCN_MEM_WRITE)   prot |= PROT_WRITE;
+    if (characteristics & IMAGE_SCN_MEM_EXECUTE) prot |= PROT_EXEC;
+    return prot;
+}
+
+bool applyMemProtect(CPU* cpu, PE pe, uintptr_t address){
+    for(size_t i = 0; i < pe.sections.size(); i++){
+        uintptr_t section_va = address + pe.sections[i].VirtualAddress;
+        
+        uint32_t virtual_size = pe.sections[i].PhysicalAddress_VirtualSize;
+        if (virtual_size == 0) virtual_size = pe.sections[i].SizeOfRawData;
+        uint32_t section_size = align_up(virtual_size, 0x1000);
+        
+        uint32_t prot = section_to_prot(pe.sections[i].Characteristics);
+
+        if(!cpu->apply_mem_prot(section_va, section_size, prot)) return false;
+    } 
+
+    return true;
+}
+
 bool PEManager::load_pe(CPU* cpu, PE pe, uintptr_t address){
     if(!load_headers(cpu, pe, address))  return false;
     if(!load_sections(cpu, pe, address)) return false;
     if(!resolve_reloc(cpu, pe, address)) return false;
     if(!resolveIat(cpu, pe, address))    return false;
-    // mem protect configuration
+    if(!applyMemProtect(cpu,pe, address))return false;
     
     return true;
 }

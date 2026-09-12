@@ -1,8 +1,14 @@
 #include "UnicornEngine.hpp"
 #include "unicorn/unicorn.h"
 
-bool UnicornEngine::mem_map(uintptr_t address, size_t size){
-    return uc_mem_map(this->uc, address, size, uint32_t perms) == UC_ERR_OK; // todo ver esto de hacer mis propios perms
+bool UnicornEngine::mem_map(uintptr_t address, size_t size, uint32_t perms){
+    perms = to_uc_prot(perms);
+    return uc_mem_map(this->uc, address, size, perms) == UC_ERR_OK; 
+}
+
+bool UnicornEngine::apply_mem_prot(uintptr_t address, size_t size, uint32_t perms) {
+    perms = to_uc_prot(perms);
+    return uc_mem_protect(this->uc, address, size, perms);
 }
 
 bool UnicornEngine::mem_read(uintptr_t address, void *buffer, size_t size){

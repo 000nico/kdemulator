@@ -21,10 +21,15 @@ class UnicornEngine : public CPU {
         size_t get_heap_size() = 0;
 
         // memory
-        bool mem_map(uintptr_t address, size_t size) = 0;
+        bool mem_map(uintptr_t address, size_t size, uint32_t perms) = 0;
         bool mem_write(uintptr_t address, void* data, size_t size) = 0;
         bool mem_read(uintptr_t address, void* buffer, size_t size) = 0;
+        bool apply_mem_prot(uintptr_t address, size_t size, uint32_t perms) = 0;
 
+        // perms
+        int to_uc_prot(uint32_t prot);
+        
+        // execution
         CpuStatus step_cpu() = 0;
     
         bool start();

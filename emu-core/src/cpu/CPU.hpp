@@ -19,9 +19,10 @@ class CPU {
         virtual size_t get_heap_size() = 0;
 
         // memory
-        virtual bool mem_map(uintptr_t address, size_t size) = 0;
+        virtual bool mem_map(uintptr_t address, size_t size, uint32_t perms) = 0; 
         virtual bool mem_write(uintptr_t address, void* data, size_t size) = 0;
         virtual bool mem_read(uintptr_t address, void* buffer, size_t size) = 0;
+        virtual bool apply_mem_prot(uintptr_t address, size_t size, uint32_t perms) = 0;
 
         // cpu
         virtual CpuStatus step_cpu() = 0;

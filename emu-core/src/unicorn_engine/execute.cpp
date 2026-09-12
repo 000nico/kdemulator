@@ -1,5 +1,4 @@
 #include "UnicornEngine.hpp"
-#include "unicorn/unicorn.h"
 #include "../memory/layout.hpp"
 
 CpuStatus UnicornEngine::step_cpu(){
