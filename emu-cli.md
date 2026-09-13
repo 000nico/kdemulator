@@ -16,7 +16,7 @@ Constructs a `DriverEmulator` from `emu-core`, builds a resolver from `emu-stubs
 - Fuzzing loop: repeatedly mutate an input buffer, send it through the dispatch routine, and record crashes or anomalies.
 
 **Reporting**
-Prints or logs execution results: which imports were resolved and by what (Rust or Python), crash information when the emulator hits invalid memory access outside of a handled SEH scope, and basic coverage or timing information if enabled.
+Prints or logs execution results: which imports were resolved and by what (C++ or Python), crash information when the emulator hits invalid memory access outside of a handled SEH scope, and basic coverage or timing information if enabled.
 
 ## What it does not do
 

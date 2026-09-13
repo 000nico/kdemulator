@@ -7,7 +7,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)  # para que VSCode tenga buen IntelliSense
 
 set(UNICORN_DIR ${CMAKE_SOURCE_DIR}/emu-core/external/unicorn)
 
-# --- FTXUI (se descarga y compila con tu mismo compilador, evita problemas de ABI) ---
+# --- FTXUI ---
 include(FetchContent)
 FetchContent_Declare(
   ftxui

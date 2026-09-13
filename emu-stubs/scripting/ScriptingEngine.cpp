@@ -1,0 +1,6 @@
+class ScriptingEngine {
+    public:
+
+    private:
+        
+};

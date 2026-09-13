@@ -6,7 +6,7 @@ A CPU-level emulator for Windows kernel drivers (`.sys` files), built on top of 
 
 Windows drivers are PE images that import functions from `ntoskrnl.exe`, `hal.dll`, and other drivers. This project maps a driver's code into an emulated address space, executes its real x86-64 instructions with Unicorn, and intercepts every call to an imported kernel function. Each intercepted call is resolved to an implementation that simulates what that function would do, without requiring a full Windows kernel or a virtual machine.
 
-The emulator does not model a complete Windows kernel. It models only what a given driver actually touches: the subset of the NT API it imports, a minimal `DRIVER_OBJECT`/`DEVICE_OBJECT`/`IRP` layout, and enough memory/IRQL bookkeeping to run the driver's code path without crashing on missing state.
+The emulator does not model a complete Windows kernel. It models only what a given driver actually touches: the subset of the NT API it imports, a minimal `DRIVER\_OBJECT`/`DEVICE\_OBJECT`/`IRP` layout, and enough memory/IRQL bookkeeping to run the driver's code path without crashing on missing state.
 
 ## Why
 
@@ -16,20 +16,22 @@ Running a real driver against a real Windows kernel for fuzzing requires a VM, s
 
 The project is split into three crates, each documented separately:
 
-- [`emu-core`](./emu-core.md) — the emulation engine: PE mapping, Unicorn wrapper, kernel structs, IRQL/SEH bookkeeping.
-- [`emu-stubs`](./emu-stubs.md) — implementations of NT API functions, in Rust by default, with an optional Python fallback for functions not covered natively.
-- [`emu-cli`](./emu-cli.md) — the command-line executable that ties the above together.
+* [`emu-core`](./emu-core.md) — the emulation engine: PE mapping, Unicorn wrapper, kernel structs, IRQL/SEH bookkeeping.
+* [`emu-stubs`](./emu-stubs.md) — implementations of NT API functions, in Rust by default, with an optional Python fallback for functions not covered natively.
+* [`emu-cli`](./emu-cli.md) — the command-line executable that ties the above together.
 
-## Design principle: Rust first, Python as fallback
+## Design principle: C++ first, Python as fallback
 
-Common NT API functions (`ExAllocatePoolWithTag`, `RtlCopyMemory`, `IoCreateDevice`, etc.) are implemented natively in Rust for speed and to keep the tool usable without any scripting setup. When a driver imports a function that isn't covered, instead of requiring a Rust change and a recompile, a user can drop in a Python file implementing just that function. The emulator only starts a Python interpreter if a stub actually falls back to it; drivers that only use already-covered functions never touch Python.
+Common NT API functions (`ExAllocatePoolWithTag`, `RtlCopyMemory`, `IoCreateDevice`, etc.) are implemented natively in C++ for speed and to keep the tool usable without any scripting setup. When a driver imports a function that isn't covered, instead of requiring a C++ change and a recompile, a user can drop in a Python file implementing just that function. The emulator only starts a Python interpreter if a stub actually falls back to it; drivers that only use already-covered functions never touch Python.
 
 ## Known limitations
 
-- Only the driver's own code and its directly imported functions are emulated. There is no scheduler, no real device stack, no other drivers unless explicitly stubbed.
-- IRQL and SEH are modeled at a basic level; they catch the common cases but are not a full reimplementation of kernel exception handling.
-- Hardware-facing drivers (MMIO, port I/O, real PCI config space) require additional stubs not covered by default.
-- Fidelity is scoped to what's needed for IOCTL-level analysis and fuzzing, not general-purpose kernel emulation.
+* Only the driver's own code and its directly imported functions are emulated. There is no scheduler, no real device stack, no other drivers unless explicitly stubbed.
+* IRQL and SEH are modeled at a basic level; they catch the common cases but are not a full reimplementation of kernel exception handling.
+* Hardware-facing drivers (MMIO, port I/O, real PCI config space) require additional stubs not covered by default.
+* Fidelity is scoped to what's needed for IOCTL-level analysis and fuzzing, not general-purpose kernel emulation.
 
 ## Why am i doing this
+
 God had no hand in the creation of this abhorrence. The fact that this monolith exists proves that god is either impotent to alter his universe or ignorant to the horrors taking place in his Kingdom
+

@@ -1,0 +1,6 @@
+class Stubs {
+    public:
+
+    private:
+        
+};
