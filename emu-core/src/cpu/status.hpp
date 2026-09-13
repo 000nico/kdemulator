@@ -1,3 +1,4 @@
+#pragma once
 enum class CpuStatus {
     OK,
     HOOK_TRAP,

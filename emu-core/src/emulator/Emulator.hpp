@@ -1,3 +1,4 @@
+#pragma once
 #include "../pe/PEManager.hpp"
 #include "../memory/memory.hpp"
 #include "../debug/Debug.hpp"

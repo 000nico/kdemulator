@@ -1,7 +1,7 @@
 #include "UnicornEngine.hpp"
 #include "unicorn/unicorn.h"
 
-int UnicornEngine::get_register(Register reg) {
+static int to_uc_reg(Register reg) {
     switch (reg) {
         case REG_RAX:    return UC_X86_REG_RAX;
         case REG_RBX:    return UC_X86_REG_RBX;
@@ -22,10 +22,21 @@ int UnicornEngine::get_register(Register reg) {
         case REG_RIP:    return UC_X86_REG_RIP;
         case REG_RFLAGS: return UC_X86_REG_EFLAGS;
     }
-
     return -1;
 }
 
-bool UnicornEngine::set_register(Register reg, uint64_t value) {
-    return uc_reg_write(this->uc, get_register(reg), &value) == UC_ERR_OK;
+uint64_t UnicornEngine::get_register(Register reg) {
+    uint64_t val = 0;
+    int uc_reg = to_uc_reg(reg);
+    if (uc_reg != -1 && this->uc != nullptr) {
+        uc_reg_read(this->uc, uc_reg, &val);
+    }
+    return val;
 }
+
+bool UnicornEngine::set_register(Register reg, uint64_t value) {
+    int uc_reg = to_uc_reg(reg);
+    if (uc_reg == -1 || this->uc == nullptr) return false;
+    return uc_reg_write(this->uc, uc_reg, &value) == UC_ERR_OK;
+}
+

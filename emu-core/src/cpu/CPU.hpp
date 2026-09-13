@@ -13,7 +13,7 @@ class CPU {
 
         // registers
         virtual bool set_register(Register reg, uint64_t value) = 0;
-        virtual int get_register(Register reg) = 0;
+        virtual uint64_t get_register(Register reg) = 0;
 
         // stack
         virtual uintptr_t get_stack_base() = 0;

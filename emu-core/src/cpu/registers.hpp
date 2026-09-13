@@ -1,3 +1,4 @@
+#pragma once
 enum Register{
     REG_RAX,
     REG_RBX,

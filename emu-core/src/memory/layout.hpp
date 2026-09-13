@@ -1,3 +1,4 @@
+#pragma once
 #define STACK_BASE 0x00000000FFFF0000ULL 
 #define STACK_SIZE 0x500000 // 5 mb
 
