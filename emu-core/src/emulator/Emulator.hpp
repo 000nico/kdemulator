@@ -2,8 +2,7 @@
 #include "../pe/PEManager.hpp"
 #include "../memory/memory.hpp"
 #include "../debug/Debug.hpp"
-#include "../pe/TrapEntry.hpp"
-#include <vector>
+#include "../emu-stubs/APIDispatcher/APIDispatcher.hpp"
 
 class Emulator {
     public: 
@@ -20,4 +19,5 @@ class Emulator {
         CPU* cpu;
         PEManager pe_manager;
         Debug debug;
+        APIDispatcher dispatcher;
 };

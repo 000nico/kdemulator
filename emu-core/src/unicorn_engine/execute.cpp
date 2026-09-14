@@ -6,7 +6,7 @@
 CpuStatus UnicornEngine::step_cpu(){
     uintptr_t current_rip = this->get_register(REG_RIP);
     
-    if((current_rip & 0xFFFFFFFF00000000) == HOOK_TRAP_ADDR) {
+    if((current_rip & 0xFFFFFFFF00000000) == HOOK_TRAP_BASE) {
         Debug::debug_msg("execute: hook trap detected at RIP=" + hex64(current_rip) + "\n", LOG_WARN);
         return CpuStatus::HOOK_TRAP;
     }

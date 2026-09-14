@@ -110,6 +110,5 @@ bool resolveIatWithHookTrap(CPU* cpu, PE pe, uintptr_t address, std::vector<Trap
 }
 
 bool resolveIat(CPU* cpu, PE pe, uintptr_t address, std::vector<TrapEntry>* trap_table){
-    resolveIatWithHookTrap(cpu, pe, address, trap_table);
-    return true;
+    return resolveIatWithHookTrap(cpu, pe, address, trap_table);
 }

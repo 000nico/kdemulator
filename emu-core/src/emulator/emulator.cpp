@@ -18,7 +18,7 @@ bool Emulator::load_driver(PE* pe){
         Debug::debug_msg("load_driver: PE pointer is null\n", LOG_ERROR);
         return false;
     }
-    if(!this->pe_manager.load_pe(this->cpu, *pe, CODE_BASE)) return false;
+    if(!this->pe_manager.load_pe(this->cpu, *pe, CODE_BASE, &this->cpu->trap_table)) return false;
 
     return true;
 }
@@ -51,7 +51,7 @@ bool Emulator::start(PE* pe){
     set_entry_point(this->cpu, pe);
 
     addCodeHookCallback(this->cpu, pe);
-    addTrapHookCallback(this->cpu);
+    addTrapHookCallback(this->cpu, &this->dispatcher);
     
     return cpu->start(CODE_BASE + pe->image_optional_header.AddressOfEntryPoint);
 }
