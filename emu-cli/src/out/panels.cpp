@@ -1,14 +1,8 @@
 #include "panels.hpp"
-#include <sstream>
+#include <hex.hpp>
 #include <iomanip>
 
 using namespace ftxui;
-
-std::string hex64(uint64_t value) {
-    std::ostringstream oss;
-    oss << "0x" << std::setw(16) << std::setfill('0') << std::hex << value;
-    return oss.str();
-}
 
 Element build_layout(
     const RegisterSnapshot& regs,

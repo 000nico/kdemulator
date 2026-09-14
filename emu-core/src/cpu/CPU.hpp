@@ -1,6 +1,8 @@
 #pragma once
 #include "registers.hpp"
 #include "status.hpp"
+#include <vector>
+#include "../pe/TrapEntry.hpp"
 #include <cstdint>
 
 class CPU;
@@ -35,6 +37,8 @@ class CPU {
 
         // hooking
         virtual bool add_code_hook(uint64_t begin, uint64_t end, CodeHookFn callback, void* user_data) = 0;
+
+        std::vector<TrapEntry> trap_table; // index = (TRAP_BASE + (0x10 * trap table index))
 
     private:
         CpuStatus status;

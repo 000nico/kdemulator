@@ -19,13 +19,16 @@ FetchContent_MakeAvailable(ftxui)
 file(GLOB_RECURSE CORE_SRCS "emu-core/src/*.cpp")
 file(GLOB_RECURSE PY_SRCS   "emu-py/src/*.cpp")
 file(GLOB_RECURSE CLI_SRCS "emu-cli/*.cpp")
+file(GLOB_RECURSE SDK_SRCS "sdk/*.cpp")
 add_executable(kdemulator
     ${CORE_SRCS}
     ${PY_SRCS}
     ${CLI_SRCS}
+    ${SDK_SRCS}
 )
 
 target_include_directories(kdemulator PRIVATE
+    sdk
     emu-core/include
     emu-py/include
     ${UNICORN_DIR}/include

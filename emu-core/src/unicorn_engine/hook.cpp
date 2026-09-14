@@ -1,13 +1,7 @@
 #include "UnicornEngine.hpp"
 #include "hook.hpp"
 #include "../debug/Debug.hpp"
-#include <sstream>
-
-static std::string hex64(uint64_t v) {
-    std::ostringstream oss;
-    oss << "0x" << std::uppercase << std::hex << v;
-    return oss.str();
-}
+#include <hex.hpp>
 
 void uc_code_hook_trampoline(uc_engine* uc, uint64_t address, uint32_t size, void* user_data) {
     HookContext* ctx = static_cast<HookContext*>(user_data); 

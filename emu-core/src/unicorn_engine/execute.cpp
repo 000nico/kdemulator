@@ -1,13 +1,7 @@
 #include "UnicornEngine.hpp"
 #include "../memory/layout.hpp"
 #include "../debug/Debug.hpp"
-#include <sstream>
-
-static std::string hex64(uint64_t v) {
-    std::ostringstream oss;
-    oss << "0x" << std::uppercase << std::hex << v;
-    return oss.str();
-}
+#include <hex.hpp>
 
 CpuStatus UnicornEngine::step_cpu(){
     uintptr_t current_rip = this->get_register(REG_RIP);

@@ -1,6 +1,0 @@
-class Stubs {
-    public:
-
-    private:
-        
-};

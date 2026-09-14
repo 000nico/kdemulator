@@ -2,6 +2,8 @@
 #include "../pe/PEManager.hpp"
 #include "../memory/memory.hpp"
 #include "../debug/Debug.hpp"
+#include "../pe/TrapEntry.hpp"
+#include <vector>
 
 class Emulator {
     public: 

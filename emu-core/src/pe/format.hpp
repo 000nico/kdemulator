@@ -159,6 +159,20 @@ typedef struct _IMAGE_BASE_RELOCATION {
     unsigned long SizeOfBlock;    // size of this block
 } IMAGE_BASE_RELOCATION;
 
+typedef struct _IMAGE_IMPORT_BY_NAME {
+    uint16_t Hint;   
+    char*    Name;    
+} IMAGE_IMPORT_BY_NAME, *PIMAGE_IMPORT_BY_NAME;
+
+typedef struct _IMAGE_THUNK_DATA64 {
+    union {
+        unsigned long long ForwarderString; 
+        unsigned long long Function;        
+        unsigned long long Ordinal;         
+        unsigned long long AddressOfData;   // RVA pointing to IMAGE_IMPORT_BY_NAME
+    } u1;
+} IMAGE_THUNK_DATA64, *PIMAGE_THUNK_DATA64;
+
 struct PE {
     IMAGE_DOS_HEADER image_dos_header;
     IMAGE_FILE_HEADER image_file_header;

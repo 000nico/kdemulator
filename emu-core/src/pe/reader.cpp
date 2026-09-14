@@ -1,7 +1,7 @@
 #include <cstdio>
 #include <cstdlib>
-#include <sstream>
 #include "PEManager.hpp"
+#include "../sdk/hex.hpp"
 #include "../debug/Debug.hpp"
 
 long getFileSize(FILE* file) {
@@ -9,18 +9,6 @@ long getFileSize(FILE* file) {
     long file_size = ftell(file);
     fseek(file, 0, SEEK_SET);
     return file_size;
-}
-
-static std::string hex32(unsigned long v) {
-    std::ostringstream oss;
-    oss << "0x" << std::uppercase << std::hex << v;
-    return oss.str();
-}
-
-static std::string hex64(unsigned long long v) {
-    std::ostringstream oss;
-    oss << "0x" << std::uppercase << std::hex << v;
-    return oss.str();
 }
 
 bool PEManager::read_pe_from_disk(char* path, PE* pe) {
