@@ -13,14 +13,26 @@ void trapHookCallback(CPU* cpu, uint64_t address, void* user_data){
 }
 
 void codeHookCallback(CPU* cpu, uint64_t address, void* user_data){
-    Debug::debug_msg("Executing at: " + hex64(address), LOG_INFO);
+    Disasm* disasm = static_cast<Disasm*>(user_data);
+    static Disasm fallback_disasm;
+    Disasm* active_disasm = disasm ? disasm : &fallback_disasm;
+
+    uint8_t raw_bytes[15] = {0};
+    if (cpu->mem_read(address, raw_bytes, sizeof(raw_bytes))) {
+        active_disasm->decompileSingleInstruction(raw_bytes, sizeof(raw_bytes), address);
+    } else {
+        if (Debug::traceMode) {
+            Debug::debug_msg("Executing at: " + hex64(address) + " (failed to read memory)\n", LOG_WARN);
+        }
+    }
 }
+
 
 void addTrapHookCallback(CPU* cpu, APIDispatcher* dispatcher){
     cpu->mem_map(HOOK_TRAP_BASE, HOOK_TRAP_SIZE, PROT_ALL);
     cpu->add_code_hook(HOOK_TRAP_BASE, HOOK_TRAP_BASE + HOOK_TRAP_SIZE, trapHookCallback, dispatcher);
 }
 
-void addCodeHookCallback(CPU* cpu, PE* pe){
-    cpu->add_code_hook(CODE_BASE, CODE_BASE + pe->image_optional_header.SizeOfImage, codeHookCallback, NULL);
-}
+void addCodeHookCallback(CPU* cpu, PE* pe, Disasm* disasm){
+    cpu->add_code_hook(CODE_BASE, CODE_BASE + pe->image_optional_header.SizeOfImage, codeHookCallback, disasm);
+}

@@ -11,10 +11,17 @@ void Output::init(){
         logs.push_back(msg);
         screen.PostEvent(ftxui::Event::Custom);
     });
+
+    Debug::set_trace_callback([this](const TraceEntry& entry) {
+        traces.push_back(entry);
+        screen.PostEvent(ftxui::Event::Custom);
+    });
 }
 
 Output::~Output() {
     Debug::set_callback(nullptr);
+    Debug::set_trace_callback(nullptr);
     Debug::shutdown();
 }
+
 

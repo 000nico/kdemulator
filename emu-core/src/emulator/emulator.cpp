@@ -4,13 +4,13 @@
 #include "hooks.hpp"
 #include <cstdint>
 #include <hex.hpp>
-#include <vector>
 
 Emulator::Emulator(CPU* cpu) : cpu(cpu) {
     stack.base = STACK_BASE;
     stack.size = STACK_SIZE;
     heap.base = HEAP_BASE;
     heap.size = HEAP_SIZE;
+    disasm.init();
 }
 
 bool Emulator::load_driver(PE* pe){
@@ -50,8 +50,9 @@ bool Emulator::start(PE* pe){
     set_rbp_rsp(this->cpu);
     set_entry_point(this->cpu, pe);
 
-    addCodeHookCallback(this->cpu, pe);
+    addCodeHookCallback(this->cpu, pe, &this->disasm);
     addTrapHookCallback(this->cpu, &this->dispatcher);
     
     return cpu->start(CODE_BASE + pe->image_optional_header.AddressOfEntryPoint);
 }
+

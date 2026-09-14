@@ -3,6 +3,7 @@
 #include "../memory/memory.hpp"
 #include "../debug/Debug.hpp"
 #include "../emu-stubs/APIDispatcher/APIDispatcher.hpp"
+#include "../disasm/Disasm.hpp"
 
 class Emulator {
     public: 
@@ -20,4 +21,5 @@ class Emulator {
         PEManager pe_manager;
         Debug debug;
         APIDispatcher dispatcher;
+        Disasm disasm;
 };

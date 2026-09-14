@@ -33,25 +33,49 @@ void Debug::set_callback(LogCallback cb) {
     s_callback = cb;
 }
 
+void Debug::set_trace_callback(TraceCallback cb) {
+    s_trace_callback = cb;
+}
+
+void Debug::add_trace(uint64_t address, const std::string& instruction) {
+    char addr_buf[32];
+    snprintf(addr_buf, sizeof(addr_buf), "0x%016llX", (unsigned long long)address);
+    TraceEntry entry{address, instruction, std::string(addr_buf) + ": " + instruction};
+    s_trace_history.push_back(entry);
+    if (s_trace_callback) {
+        s_trace_callback(entry);
+    }
+}
+
+const std::vector<TraceEntry>& Debug::get_trace_history() {
+    return s_trace_history;
+}
+
+void Debug::clear_trace_history() {
+    s_trace_history.clear();
+}
+
 void Debug::debug_msg(const std::string& msg, LogLevel level){
     std::string prefix = getPrefix(level);
     std::string color = getColor(level);
     std::string timestamp = getTimestamp();
-    printf("%s", (color + prefix + msg).c_str());
 
     std::string cleaned_msg = msg;
     while (!cleaned_msg.empty() && (cleaned_msg.back() == '\n' || cleaned_msg.back() == '\r')) {
         cleaned_msg.pop_back();
     }
 
+    printf("(%s) %s%s\033[0m\033[37m%s\033[0m\n", timestamp.c_str(), color.c_str(), prefix.c_str(), cleaned_msg.c_str());
+
     // persistance
     if(log_file){
-        fprintf(log_file, "[%s] %s%s\n", timestamp.c_str(), prefix.c_str(), cleaned_msg.c_str());
+        fprintf(log_file, "(%s) %s%s\n", timestamp.c_str(), prefix.c_str(), cleaned_msg.c_str());
         fflush(log_file);
     }
 
     // callback para emu-cli
     if(s_callback){
-        s_callback(timestamp + " " + prefix + cleaned_msg, level);
+        s_callback("(" + timestamp + ") " + prefix + cleaned_msg, level);
     }
 }
+

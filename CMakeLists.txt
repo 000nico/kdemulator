@@ -16,8 +16,19 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(ftxui)
 
+# --- ZYDIS ---
+FetchContent_Declare(
+  zydis
+  GIT_REPOSITORY https://github.com/zyantific/zydis.git
+  GIT_TAG v4.1.0  # O la versión estable más reciente
+)
+
+set(ZYDIS_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
+set(ZYDIS_BUILD_TESTS OFF CACHE BOOL "" FORCE)
+FetchContent_MakeAvailable(zydis)
+
 file(GLOB_RECURSE CORE_SRCS "emu-core/src/*.cpp")
-file(GLOB_RECURSE PY_SRCS   "emu-stubs/*.cpp")
+file(GLOB_RECURSE PY_SRCS    "emu-stubs/*.cpp")
 file(GLOB_RECURSE CLI_SRCS "emu-cli/*.cpp")
 file(GLOB_RECURSE SDK_SRCS "sdk/*.cpp")
 add_executable(kdemulator
@@ -40,6 +51,7 @@ target_link_directories(kdemulator PRIVATE
 
 target_link_libraries(kdemulator PRIVATE
     unicorn
+    Zydis               # <--- AQUÍ ENLAZAS ZYDIS
     ftxui::screen
     ftxui::dom
     ftxui::component

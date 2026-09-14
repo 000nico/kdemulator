@@ -16,6 +16,7 @@ int main() {
 
     // CLI command dispatcher
     input.set_on_command([&](const std::string& cmd_line) {
+        output.reset_scroll();
         std::istringstream iss(cmd_line);
         std::string cmd;
         iss >> cmd;
@@ -26,9 +27,20 @@ int main() {
             Debug::debug_msg("  /start        - Start driver execution from EntryPoint\n", LOG_INFO);
             Debug::debug_msg("  /step         - Execute a single CPU instruction\n", LOG_INFO);
             Debug::debug_msg("  /regs         - Refresh registers on screen\n", LOG_INFO);
+            Debug::debug_msg("  /trace        - Toggle trace mode (on/off)\n", LOG_INFO);
+            Debug::debug_msg("  /clean        - Clear the logs panel\n", LOG_INFO);
             Debug::debug_msg("  /help         - Show this help menu\n", LOG_INFO);
             Debug::debug_msg("  /exit         - Exit the emulator\n", LOG_INFO);
         }
+        else if (cmd == "/clean" || cmd == "/cls" || cmd == "/clear") {
+            output.clear_logs();
+        }
+        else if (cmd == "/trace") {
+            Debug::traceMode = !Debug::traceMode;
+            Debug::debug_msg("Trace mode " + std::string(Debug::traceMode ? "ENABLED" : "DISABLED") + ".\n", LOG_INFO);
+            output.refresh();
+        }
+
         else if (cmd == "/start") {
             // Error handling: Check if a driver PE is already loaded
             if (!pe_loaded) {
@@ -69,6 +81,8 @@ int main() {
             }
 
             pe_loaded = true;
+            Debug::clear_trace_history();
+            output.clear_traces();
             output.set_driver_name(std::filesystem::path(path).filename().string());
             Debug::debug_msg("Driver loaded and mapped into memory successfully.\n", LOG_INFO);
             
@@ -97,6 +111,7 @@ int main() {
         else {
             Debug::debug_msg("Unknown command: " + cmd + ". Type '/' for available commands.\n", LOG_WARN);
         }
+
     });
 
     output.init();

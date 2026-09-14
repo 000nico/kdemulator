@@ -16,6 +16,8 @@
 #define NTOSKRNL_BASE           0xFFFFF80000000000
 #define KUSER_SHARED_DATA_BASE  0xFFFFF78000000000
 #define CODE_BASE               0x0000000140000000ULL // where .sys gets mapped
+
+
 #define STRUCT_BASE             0x0000000030000000ULL // for DRIVER_OBJECT, DEVICE_OBJECT, IRP, etc.
 
 // hooks
