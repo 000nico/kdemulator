@@ -9,6 +9,13 @@
 #include "../api/memory/ExAllocatePoolWithTag.hpp"
 #include "../api/memory/ExFreePoolWithTag.hpp"
 #include "../api/memory/ExFreePool.hpp"
+#include "../api/rtl/RtlInitUnicodeString.hpp"
+#include "../api/rtl/RtlZeroMemory.hpp"
+#include "../api/rtl/RtlCopyMemory.hpp"
+#include "../api/rtl/RtlCopyUnicodeString.hpp"
+#include "../api/rtl/RtlUnicodeStringToInteger.hpp"
+#include "../api/rtl/RtlIntegerToUnicodeString.hpp"
+#include "../api/rtl/RtlAppendUnicodeStringToString.hpp"
 
 APIDispatcher::APIDispatcher(){
     register_api("DbgPrint", new ApiDbgPrint());
@@ -20,6 +27,13 @@ APIDispatcher::APIDispatcher(){
     register_api("ExAllocatePoolWithTag", new ApiExAllocatePoolWithTag());
     register_api("ExFreePool", new ApiExFreePool());
     register_api("ExFreePoolWithTag", new ApiExFreePoolWithTag());
+    register_api("RtlZeroMemory", new ApiRtlZeroMemory());
+    register_api("RtlCopyMemory", new ApiRtlCopyMemory());
+    register_api("RtlCopyUnicodeString", new ApiRtlCopyUnicodeString());
+    register_api("RtlInitUnicodeString", new ApiRtlInitUnicodeString());
+    register_api("RtlUnicodeStringToInteger", new ApiRtlUnicodeStringToInteger());
+    register_api("RtlIntegerToUnicodeString", new ApiRtlIntegerToUnicodeString());
+    register_api("RtlAppendUnicodeStringToString", new ApiRtlAppendUnicodeStringToString());
 }
 
 void APIDispatcher::register_api(const std::string &name, Api *api){

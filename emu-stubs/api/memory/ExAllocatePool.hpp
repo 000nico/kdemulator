@@ -14,6 +14,6 @@ class ApiExAllocatePool : public Api {
             else
                 Debug::debug_msg("[ExAllocatePool] Allocated non-paged memory, size = " + std::to_string(arg1), LOG_INFO);;
 
-            return allocate(arg1, arg0, 'None', cpu);; 
+            return allocate(arg1, arg0, 0, cpu);; 
         }
 };

@@ -52,6 +52,7 @@ bool Emulator::start(PE* pe){
         return false;
     }
 
+    mam_paged_nonpaged_pools(this->cpu);
     map_stack_and_heap(this->cpu);
     set_rbp_rsp(this->cpu);
     set_entry_point(this->cpu, pe);
