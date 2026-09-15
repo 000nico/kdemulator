@@ -38,7 +38,7 @@ class CPU {
         // hooking
         virtual bool add_code_hook(uint64_t begin, uint64_t end, CodeHookFn callback, void* user_data) = 0;
 
-        std::vector<TrapEntry> trap_table; // index = (TRAP_BASE + (0x10 * trap table index))
+        std::vector<TrapEntry> trap_table; // index = (TRAP_BASE + (0x10 * trap table index)). ik that this shouldn't be here, it should be in emulator
 
     private:
         CpuStatus status;

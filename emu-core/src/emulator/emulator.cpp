@@ -23,6 +23,12 @@ bool Emulator::load_driver(PE* pe){
     return true;
 }
 
+void mam_paged_nonpaged_pools(CPU* cpu) {
+    cpu->mem_map(NON_PAGED_POOL_BASE, NON_PAGED_POOL_SIZE, PROT_READ | PROT_WRITE);
+    cpu->mem_map(PAGED_POOL_BASE, PAGED_POOL_SIZE, PROT_READ | PROT_WRITE);\
+    Debug::debug_msg("Paged and non paged pool mapped", LOG_INFO);
+}
+
 void map_stack_and_heap(CPU* cpu){
     cpu->mem_map(STACK_BASE, STACK_SIZE, PROT_READ | PROT_WRITE);
     cpu->mem_map(HEAP_BASE, HEAP_SIZE, PROT_READ | PROT_WRITE);

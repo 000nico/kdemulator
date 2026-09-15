@@ -3,11 +3,23 @@
 #include "../api/out/DbgPrint.hpp"
 #include "../api/out/KdPrint.hpp"
 #include "../api/out/DbgPrintEx.hpp"
+#include "../api/memory/ExAllocatePool.hpp"
+#include "../api/memory/ExAllocatePool2.hpp"
+#include "../api/memory/ExAllocatePool3.hpp"
+#include "../api/memory/ExAllocatePoolWithTag.hpp"
+#include "../api/memory/ExFreePoolWithTag.hpp"
+#include "../api/memory/ExFreePool.hpp"
 
 APIDispatcher::APIDispatcher(){
     register_api("DbgPrint", new ApiDbgPrint());
     register_api("KdPrint",  new ApiKdPrint());
     register_api("DbgPrintEx", new ApiDbgPrintEx());
+    register_api("ExAllocatePool", new ApiExAllocatePool());
+    register_api("ExAllocatePool2", new ApiExAllocatePool2());
+    register_api("ExAllocatePool3", new ApiExAllocatePool3());
+    register_api("ExAllocatePoolWithTag", new ApiExAllocatePoolWithTag());
+    register_api("ExFreePool", new ApiExFreePool());
+    register_api("ExFreePoolWithTag", new ApiExFreePoolWithTag());
 }
 
 void APIDispatcher::register_api(const std::string &name, Api *api){
