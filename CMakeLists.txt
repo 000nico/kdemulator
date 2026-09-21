@@ -56,9 +56,3 @@ target_link_libraries(kdemulator PRIVATE
     ftxui::dom
     ftxui::component
 )
-
-add_custom_command(TARGET kdemulator POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy_if_different
-        "${UNICORN_DIR}/bin/libunicorn.dll"
-        "$<TARGET_FILE_DIR:kdemulator>"
-)
