@@ -1,3 +1,20 @@
+<div align="center">
+
+<img src="assets/banner.jpg" alt="blue-pill" width="600">
+
+<br><br>
+
+[![license](https://img.shields.io/badge/license-MIT-blue?style=flat-square)](LICENSE)
+[![language](https://img.shields.io/badge/language-C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)](https://isocpp.org/)
+[![platform](https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square&logo=windows&logoColor=white)](https://www.microsoft.com)
+
+**[features](#features) · [docs](docs/) · [contribute](#contribute)**
+
+*kernel driver emulator.*
+
+</div>
+
+
 # kdemulator
 
 A CPU-level emulator for Windows kernel drivers (`.sys` files), built on top of the Unicorn Engine. The goal is to load a driver, run its `DriverEntry` and IOCTL dispatch routines outside of a real Windows kernel, and use the result as a target for fuzzing or manual analysis.
