@@ -1,6 +1,7 @@
 #include "Emulator.hpp"
 #include "../cpu/perms.hpp"
 #include "../memory/layout.hpp"
+#include "../kernel/allocator.hpp"
 #include "hooks.hpp"
 #include <cstdint>
 #include <hex.hpp>
@@ -56,6 +57,8 @@ bool Emulator::start(PE* pe){
     map_stack_and_heap(this->cpu);
     set_rbp_rsp(this->cpu);
     set_entry_point(this->cpu, pe);
+    allocate_kuser(this->cpu);
+    allocate_driver_object(this->cpu, pe);
 
     addCodeHookCallback(this->cpu, pe, &this->disasm);
     addTrapHookCallback(this->cpu, &this->dispatcher);
