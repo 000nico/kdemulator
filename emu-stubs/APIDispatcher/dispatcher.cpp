@@ -1,4 +1,5 @@
 #include "APIDispatcher.hpp"
+#include "../api/ob/IoCreateDevice.hpp"
 #include "../emu-core/src/memory/layout.hpp"
 #include "../api/out/DbgPrint.hpp"
 #include "../api/out/KdPrint.hpp"
@@ -34,6 +35,7 @@ APIDispatcher::APIDispatcher(){
     register_api("RtlUnicodeStringToInteger", new ApiRtlUnicodeStringToInteger());
     register_api("RtlIntegerToUnicodeString", new ApiRtlIntegerToUnicodeString());
     register_api("RtlAppendUnicodeStringToString", new ApiRtlAppendUnicodeStringToString());
+    register_api("IoCreateDevice", new ApiIoCreateDevice());
 }
 
 void APIDispatcher::register_api(const std::string &name, Api *api){

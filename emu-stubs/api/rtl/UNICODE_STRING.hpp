@@ -1,8 +1,4 @@
 #pragma once
-#include <windows.h>
+#include "../emu-core/src/kernel/include/structs.hpp"
 
-typedef struct _UNICODE_STRING {
-    USHORT Length;
-    USHORT MaximumLength;
-    PWSTR  Buffer;
-} UNICODE_STRING, *PUNICODE_STRING;
+using PUNICODE_STRING = UNICODE_STRING*;

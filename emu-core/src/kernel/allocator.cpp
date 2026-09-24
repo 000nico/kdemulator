@@ -17,9 +17,6 @@ constexpr uint64_t OFF_DRVNAME = 0x178;
 constexpr uint64_t OFF_HWDB    = 0x1F8;
 constexpr uint64_t OFF_DEFDISP = 0x2F8;
 
-constexpr uint64_t OFF_DEVOBJ  = 0x000;
-constexpr uint64_t OFF_DEVEXT  = 0x120;
-
 static inline void mw(CPU* cpu, uint64_t addr, const void* data, size_t size) {
     cpu->mem_write(addr, const_cast<void*>(data), size);
 }

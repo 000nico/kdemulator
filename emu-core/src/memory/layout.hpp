@@ -41,3 +41,7 @@
 // hooks
 #define HOOK_TRAP_BASE          0x0000000020000000ULL
 #define HOOK_TRAP_SIZE          0x1000
+
+// device object layout offsets
+#define OFF_DEVOBJ  0x000
+#define OFF_DEVEXT  0x120

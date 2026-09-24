@@ -1,0 +1,30 @@
+index    name                    Usermode trigger
+──────────────────────────────────────────────────────────────
+0x00    IRP_MJ_CREATE             CreateFile()
+0x01    IRP_MJ_CREATE_NAMED_PIPE  CreateNamedPipe()
+0x02    IRP_MJ_CLOSE              CloseHandle()
+0x03    IRP_MJ_READ               ReadFile()
+0x04    IRP_MJ_WRITE              WriteFile()
+0x05    IRP_MJ_QUERY_INFORMATION  GetFileInformationByHandle()
+0x06    IRP_MJ_SET_INFORMATION    SetFileInformationByHandle()
+0x07    IRP_MJ_QUERY_EA           —
+0x08    IRP_MJ_SET_EA             —
+0x09    IRP_MJ_FLUSH_BUFFERS      FlushFileBuffers()
+0x0A    IRP_MJ_QUERY_VOLUME_INFO  GetDiskFreeSpace()
+0x0B    IRP_MJ_SET_VOLUME_INFO    —
+0x0C    IRP_MJ_DIRECTORY_CONTROL  FindFirstFile()
+0x0D    IRP_MJ_FILE_SYSTEM_CTRL   FsControl
+0x0E    IRP_MJ_DEVICE_CONTROL     DeviceIoControl()   ← the most important
+0x0F    IRP_MJ_INTERNAL_DEVICE_CONTROL  kernel-only
+0x10    IRP_MJ_SHUTDOWN           system shuttind gonw
+0x11    IRP_MJ_LOCK_CONTROL       LockFile()
+0x12    IRP_MJ_CLEANUP            last handle closed (antes de CLOSE)
+0x13    IRP_MJ_CREATE_MAILSLOT    CreateMailslot()
+0x14    IRP_MJ_QUERY_SECURITY     GetSecurityInfo()
+0x15    IRP_MJ_SET_SECURITY       SetSecurityInfo()
+0x16    IRP_MJ_POWER              WM_POWERBROADCAST (PnP)
+0x17    IRP_MJ_SYSTEM_CONTROL     WMI
+0x18    IRP_MJ_DEVICE_CHANGE      —
+0x19    IRP_MJ_QUERY_QUOTA        —
+0x1A    IRP_MJ_SET_QUOTA          —
+0x1B    IRP_MJ_PNP                PnP manager

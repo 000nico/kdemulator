@@ -14,7 +14,7 @@ class ApiRtlCopyUnicodeString : public Api {
             UNICODE_STRING bufferDest;
             
             /* If SourceString is NULL, this routine sets the Length field of the structure pointed to by DestinationString to zero. */
-            if(source == NULL){
+            if(source == 0){
                 USHORT zero = 0;
                 cpu->mem_write(destination, &zero, sizeof(USHORT));
                 return 0;
