@@ -8,6 +8,8 @@
 *.exp
 *.lib
 
+.zed/
+
 # --- Python (interpreter embedded at runtime, stub files are user content) ---
 __pycache__/
 *.pyc

@@ -56,7 +56,7 @@ void security_cookie_patch(CPU* cpu, PE* pe) {
     uint64_t rva = cookie_va - pe->image_optional_header.ImageBase;
     uint64_t cookie_addr = CODE_BASE + rva;
 
-    uint64_t fixed_cookie = 0x2B992DDFA232ULL;
+    uint64_t fixed_cookie = 0xDEADC0DECAFEBABEULL;
 
     if (!cpu->mem_write(cookie_addr, &fixed_cookie, sizeof(fixed_cookie))) {
         Debug::debug_msg("security_cookie_patch: mem_write failed at " + hex64(cookie_addr), LOG_ERROR);
