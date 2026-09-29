@@ -3,6 +3,7 @@
 #include "include/structs.hpp"
 #include "../memory/layout.hpp"
 #include "../pe/format.hpp"
+#include "../debug/Debug.hpp"
 #include <string>
 #include <vector>
 
@@ -16,6 +17,10 @@ constexpr uint64_t OFF_DRVEXT  = 0x150;
 constexpr uint64_t OFF_DRVNAME = 0x178;
 constexpr uint64_t OFF_HWDB    = 0x1F8;
 constexpr uint64_t OFF_DEFDISP = 0x2F8;
+
+static inline size_t align_up_4k(size_t size) {
+    return (size + 0xFFF) & ~static_cast<size_t>(0xFFF);
+}
 
 static inline void mw(CPU* cpu, uint64_t addr, const void* data, size_t size) {
     cpu->mem_write(addr, const_cast<void*>(data), size);
@@ -52,7 +57,10 @@ static std::string pe_module_name(PE* pe) {
 
 void allocate_driver_object(CPU* cpu, PE* driver_pe) {
     const uint8_t ret_stub = 0xC3;
-    cpu->mem_map(STRUCT_BASE, 0x400, PROT_READ | PROT_WRITE | PROT_EXEC);
+
+    if (!cpu->mem_map(STRUCT_BASE, 0x1000, PROT_READ | PROT_WRITE | PROT_EXEC))
+        Debug::debug_msg("failed to map STRUCT_BASE", LOG_ERROR);
+
     mw(cpu, STRUCT_BASE + OFF_DEFDISP, &ret_stub, sizeof(ret_stub));
 
     const uint64_t default_dispatch = STRUCT_BASE + OFF_DEFDISP;
@@ -113,7 +121,8 @@ void allocate_driver_object(CPU* cpu, PE* driver_pe) {
 }
 
 void allocate_device_object(CPU* cpu) {
-    cpu->mem_map(DEVICE_BASE, 0x300, PROT_READ | PROT_WRITE);
+    if (!cpu->mem_map(DEVICE_BASE, 0x1000, PROT_READ | PROT_WRITE))
+        Debug::debug_msg("failed to map DEVICE_BASE", LOG_ERROR);
 
     DEVICE_OBJECT dev{};
     dev.Type                  = 3;
@@ -141,7 +150,10 @@ void allocate_device_object(CPU* cpu) {
 }
 
 void allocate_kuser(CPU* cpu) {
-    cpu->mem_map(KUSER_BASE, sizeof(KUSER_SHARED_DATA), PROT_READ | PROT_WRITE);
+    size_t map_size = align_up_4k(sizeof(KUSER_SHARED_DATA)); 
+
+    if (!cpu->mem_map(KUSER_BASE, map_size, PROT_READ | PROT_WRITE))
+        Debug::debug_msg("failed to map KUSER_BASE", LOG_ERROR);
 
     KUSER_SHARED_DATA kus{};
     kus.TickCountMultiplier         = 0x0FA00000;

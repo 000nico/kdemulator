@@ -1,0 +1,20 @@
+{
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path": "C:\\Program Files\\LLVM\\bin\\clangd.exe",
+        "arguments": [
+          "--background-index",
+          "--compile-commands-dir=build",
+          "--query-driver=C:/msys64/ucrt64/bin/*",
+          "-j=8",
+          "--clang-tidy=false",
+          "--header-insertion=never"
+        ],
+        "env": {
+          "PATH": "C:\\msys64\\ucrt64\\bin;C:\\Windows\\system32;C:\\Windows"
+        }
+      }
+    }
+  }
+}

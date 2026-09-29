@@ -173,6 +173,27 @@ typedef struct _IMAGE_THUNK_DATA64 {
     } u1;
 } IMAGE_THUNK_DATA64, *PIMAGE_THUNK_DATA64;
 
+struct IMAGE_LOAD_CONFIG_DIRECTORY64 {
+    unsigned long  Size;                    // +00
+    unsigned long  TimeDateStamp;           // +04
+    unsigned short MajorVersion;            // +08
+    unsigned short MinorVersion;            // +0A
+    unsigned long  GlobalFlagsClear;        // +0C
+    unsigned long  GlobalFlagsSet;          // +10
+    unsigned long  CriticalSectionDefaultTimeout; // +14
+    unsigned long long DeCommitFreeBlockThreshold; // +18
+    unsigned long long DeCommitTotalFreeThreshold; // +20
+    unsigned long long LockPrefixTable;     // +28
+    unsigned long long MaximumAllocationSize; // +30
+    unsigned long long VirtualMemoryThreshold; // +38
+    unsigned long long ProcessAffinityMask; // +40
+    unsigned long  ProcessHeapFlags;        // +48
+    unsigned short CSDVersion;              // +4C
+    unsigned short DependentLoadFlags;      // +4E
+    unsigned long long EditList;            // +50
+    unsigned long long SecurityCookie;      // +58   ...love
+};
+
 struct PE {
     IMAGE_DOS_HEADER image_dos_header;
     IMAGE_FILE_HEADER image_file_header;

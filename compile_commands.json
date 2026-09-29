@@ -1,0 +1,782 @@
+[
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\debug\\messages.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\debug\\messages.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/debug/messages.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/debug/messages.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\debug\\persistance.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\debug\\persistance.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/debug/persistance.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/debug/persistance.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\disasm\\disasm.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\disasm\\disasm.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/disasm/disasm.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/disasm/disasm.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\emulator\\emulator.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\emulator\\emulator.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/emulator/emulator.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/emulator/emulator.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\emulator\\hooks.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\emulator\\hooks.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/emulator/hooks.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/emulator/hooks.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\emulator\\ioctl_injection.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\emulator\\ioctl_injection.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/emulator/ioctl_injection.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/emulator/ioctl_injection.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\kernel\\allocator.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\kernel\\allocator.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel/allocator.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/kernel/allocator.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\pe\\loader\\headers.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\pe\\loader\\headers.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/pe/loader/headers.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/pe/loader/headers.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\pe\\loader\\iat.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\pe\\loader\\iat.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/pe/loader/iat.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/pe/loader/iat.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\pe\\loader\\loader.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\pe\\loader\\loader.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/pe/loader/loader.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/pe/loader/loader.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\pe\\loader\\protect.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\pe\\loader\\protect.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/pe/loader/protect.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/pe/loader/protect.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\pe\\loader\\reloc.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\pe\\loader\\reloc.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/pe/loader/reloc.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/pe/loader/reloc.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\pe\\loader\\sections.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\pe\\loader\\sections.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/pe/loader/sections.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/pe/loader/sections.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\pe\\reader.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\pe\\reader.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/pe/reader.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/pe/reader.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\unicorn_engine\\UnicornEngine.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\unicorn_engine\\UnicornEngine.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/unicorn_engine/UnicornEngine.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/unicorn_engine/UnicornEngine.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\unicorn_engine\\execute.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\unicorn_engine\\execute.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/unicorn_engine/execute.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/unicorn_engine/execute.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\unicorn_engine\\hook.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\unicorn_engine\\hook.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/unicorn_engine/hook.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/unicorn_engine/hook.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\unicorn_engine\\mem_bus.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\unicorn_engine\\mem_bus.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/unicorn_engine/mem_bus.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/unicorn_engine/mem_bus.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\unicorn_engine\\perms.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\unicorn_engine\\perms.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/unicorn_engine/perms.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/unicorn_engine/perms.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-core\\src\\unicorn_engine\\registers.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-core\\src\\unicorn_engine\\registers.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-core/src/unicorn_engine/registers.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-core/src/unicorn_engine/registers.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\APIDispatcher\\dispatcher.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\APIDispatcher\\dispatcher.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/APIDispatcher/dispatcher.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/APIDispatcher/dispatcher.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\api\\get_arg.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\api\\get_arg.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/api/get_arg.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/api/get_arg.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\api\\memory\\allocators_common.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\api\\memory\\allocators_common.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/api/memory/allocators_common.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/api/memory/allocators_common.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\api\\ob\\IoCreateSymbolicLink.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\api\\ob\\IoCreateSymbolicLink.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/api/ob/IoCreateSymbolicLink.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/api/ob/IoCreateSymbolicLink.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\api\\ob\\IoDeleteDevice.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\api\\ob\\IoDeleteDevice.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/api/ob/IoDeleteDevice.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/api/ob/IoDeleteDevice.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\api\\ob\\IoDeleteSymbolicLink.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\api\\ob\\IoDeleteSymbolicLink.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/api/ob/IoDeleteSymbolicLink.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/api/ob/IoDeleteSymbolicLink.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\scripting\\ScriptingEngine.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\scripting\\ScriptingEngine.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/scripting/ScriptingEngine.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/scripting/ScriptingEngine.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-cli\\main.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-cli\\main.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-cli/main.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-cli/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-cli\\src\\out\\output.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-cli\\src\\out\\output.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-cli/src/out/output.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-cli/src/out/output.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-cli\\src\\out\\panels.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-cli\\src\\out\\panels.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-cli/src/out/panels.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-cli/src/out/panels.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\box.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\box.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/screen/box.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/box.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\color.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\color.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/screen/color.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\color_info.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\color_info.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/screen/color_info.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/color_info.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\screen.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\screen.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/screen/screen.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/screen.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\string.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\string.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/screen/string.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/string.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\screen.dir\\src\\ftxui\\screen\\terminal.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\screen\\terminal.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/screen/terminal.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/screen.dir/src/ftxui/screen/terminal.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\automerge.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\automerge.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/automerge.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/automerge.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\blink.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\blink.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/blink.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/blink.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\bold.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\bold.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/bold.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/bold.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\hyperlink.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\hyperlink.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/hyperlink.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hyperlink.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\border.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\border.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/border.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/border.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\box_helper.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\box_helper.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/box_helper.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/box_helper.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\canvas.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\canvas.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/canvas.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/canvas.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\clear_under.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\clear_under.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/clear_under.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/clear_under.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\color.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\color.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/color.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/color.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\composite_decorator.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\composite_decorator.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/composite_decorator.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/composite_decorator.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\dbox.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\dbox.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/dbox.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dbox.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\dim.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\dim.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/dim.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/dim.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\flex.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\flex.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/flex.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flex.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\flexbox.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\flexbox.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/flexbox.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\flexbox_config.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\flexbox_config.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/flexbox_config.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_config.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\flexbox_helper.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\flexbox_helper.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/flexbox_helper.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/flexbox_helper.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\focus.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\focus.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/focus.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/focus.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\frame.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\frame.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/frame.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/frame.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\gauge.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\gauge.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/gauge.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gauge.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\graph.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\graph.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/graph.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/graph.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\gridbox.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\gridbox.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/gridbox.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/gridbox.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\hbox.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\hbox.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/hbox.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/hbox.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\inverted.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\inverted.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/inverted.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/inverted.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\linear_gradient.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\linear_gradient.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/linear_gradient.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/linear_gradient.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\node.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\node.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/node.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\node_decorator.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\node_decorator.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/node_decorator.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/node_decorator.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\paragraph.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\paragraph.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/paragraph.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/paragraph.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\reflect.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\reflect.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/reflect.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/reflect.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\scroll_indicator.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\scroll_indicator.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/scroll_indicator.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/scroll_indicator.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\separator.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\separator.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/separator.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/separator.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\size.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\size.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/size.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/size.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\spinner.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\spinner.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/spinner.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/spinner.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\strikethrough.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\strikethrough.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/strikethrough.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/strikethrough.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\table.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\table.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/table.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/table.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\text.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\text.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/text.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/text.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\underlined.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\underlined.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/underlined.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\underlined_double.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\underlined_double.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/underlined_double.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/underlined_double.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\util.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\util.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/util.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/util.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\dom.dir\\src\\ftxui\\dom\\vbox.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\dom\\vbox.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/dom/vbox.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/dom.dir/src/ftxui/dom/vbox.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\animation.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\animation.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/animation.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/animation.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\button.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\button.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/button.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/button.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\catch_event.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\catch_event.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/catch_event.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/catch_event.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\checkbox.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\checkbox.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/checkbox.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/checkbox.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\collapsible.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\collapsible.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/collapsible.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/collapsible.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\component.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\component.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/component.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\component_options.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\component_options.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/component_options.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/component_options.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\container.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\container.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/container.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/container.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\dropdown.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\dropdown.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/dropdown.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/dropdown.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\event.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\event.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/event.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/event.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\hoverable.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\hoverable.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/hoverable.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/hoverable.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\input.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\input.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/input.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/input.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\loop.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\loop.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/loop.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/loop.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\maybe.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\maybe.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/maybe.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/maybe.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\menu.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\menu.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/menu.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/menu.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\modal.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\modal.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/modal.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/modal.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\radiobox.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\radiobox.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/radiobox.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/radiobox.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\renderer.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\renderer.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/renderer.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/renderer.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\resizable_split.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\resizable_split.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/resizable_split.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/resizable_split.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\screen_interactive.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\screen_interactive.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/screen_interactive.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/screen_interactive.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\slider.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\slider.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/slider.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/slider.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\terminal_input_parser.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\terminal_input_parser.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/terminal_input_parser.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/terminal_input_parser.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\util.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\util.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/util.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/util.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DFTXUI_MICROSOFT_TERMINAL_FALLBACK -DUNICODE -D_UNICODE -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o _deps\\ftxui-build\\CMakeFiles\\component.dir\\src\\ftxui\\component\\window.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\ftxui-src\\src\\ftxui\\component\\window.cpp",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/src/ftxui/component/window.cpp",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-build/CMakeFiles/component.dir/src/ftxui/component/window.cpp.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\MetaInfo.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\MetaInfo.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/MetaInfo.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/MetaInfo.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\Mnemonic.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\Mnemonic.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/Mnemonic.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/Mnemonic.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\Register.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\Register.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/Register.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/Register.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\Segment.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\Segment.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/Segment.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/Segment.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\SharedData.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\SharedData.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/SharedData.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/SharedData.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\String.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\String.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/String.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/String.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\Utils.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\Utils.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/Utils.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/Utils.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\Zydis.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\Zydis.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/Zydis.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/Zydis.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\Decoder.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\Decoder.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/Decoder.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/Decoder.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\DecoderData.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\DecoderData.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/DecoderData.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/DecoderData.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\Encoder.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\Encoder.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/Encoder.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/Encoder.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\EncoderData.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\EncoderData.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/EncoderData.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/EncoderData.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\Disassembler.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\Disassembler.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/Disassembler.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/Disassembler.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\Formatter.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\Formatter.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/Formatter.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/Formatter.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\FormatterBuffer.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\FormatterBuffer.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/FormatterBuffer.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/FormatterBuffer.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\FormatterATT.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\FormatterATT.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/FormatterATT.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/FormatterATT.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\FormatterBase.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\FormatterBase.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/FormatterBase.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/FormatterBase.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -g -std=gnu11 -o _deps\\zydis-build\\CMakeFiles\\Zydis.dir\\src\\FormatterIntel.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\src\\FormatterIntel.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/src/FormatterIntel.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/CMakeFiles/Zydis.dir/src/FormatterIntel.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\API\\Memory.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\API\\Memory.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/API/Memory.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/API/Memory.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\API\\Process.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\API\\Process.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/API/Process.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/API/Process.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\API\\Synchronization.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\API\\Synchronization.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/API/Synchronization.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/API/Synchronization.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\API\\Terminal.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\API\\Terminal.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/API/Terminal.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/API/Terminal.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\API\\Thread.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\API\\Thread.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/API/Thread.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/API/Thread.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\Allocator.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\Allocator.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/Allocator.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/Allocator.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\ArgParse.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\ArgParse.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/ArgParse.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/ArgParse.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\Bitset.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\Bitset.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/Bitset.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/Bitset.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\Format.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\Format.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/Format.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/Format.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\List.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\List.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/List.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/List.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\String.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\String.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/String.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/String.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\Vector.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\Vector.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/Vector.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/Vector.c.obj"
+},
+{
+  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\cc.exe -DZYCORE_STATIC_BUILD -D_CRT_SECURE_NO_WARNINGS -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src -g -std=gnu11 -o _deps\\zydis-build\\zycore\\CMakeFiles\\Zycore.dir\\src\\Zycore.c.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\build\\_deps\\zydis-src\\dependencies\\zycore\\src\\Zycore.c",
+  "file": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/src/Zycore.c",
+  "output": "C:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore/CMakeFiles/Zycore.dir/src/Zycore.c.obj"
+}
+]

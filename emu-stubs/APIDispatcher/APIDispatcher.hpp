@@ -9,7 +9,7 @@ class APIDispatcher {
         APIDispatcher();
         bool resolve(CPU* cpu);
         void invoke(const std::string& name, CPU* cpu);
-        
+
     private:
         std::unordered_map<std::string, Api*> apis;
         void register_api(const std::string& name, Api* api);
