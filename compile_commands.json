@@ -139,24 +139,6 @@
 },
 {
   "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\api\\ob\\IoCreateSymbolicLink.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\api\\ob\\IoCreateSymbolicLink.cpp",
-  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/api/ob/IoCreateSymbolicLink.cpp",
-  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/api/ob/IoCreateSymbolicLink.cpp.obj"
-},
-{
-  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\api\\ob\\IoDeleteDevice.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\api\\ob\\IoDeleteDevice.cpp",
-  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/api/ob/IoDeleteDevice.cpp",
-  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/api/ob/IoDeleteDevice.cpp.obj"
-},
-{
-  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\api\\ob\\IoDeleteSymbolicLink.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\api\\ob\\IoDeleteSymbolicLink.cpp",
-  "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/api/ob/IoDeleteSymbolicLink.cpp",
-  "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/api/ob/IoDeleteSymbolicLink.cpp.obj"
-},
-{
-  "directory": "C:/Users/nicolas/Desktop/kdemulator/build",
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe -DZYCORE_STATIC_BUILD -DZYDIS_STATIC_BUILD -IC:/Users/nicolas/Desktop/kdemulator -IC:/Users/nicolas/Desktop/kdemulator/sdk -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src -IC:/Users/nicolas/Desktop/kdemulator/emu-core/src/kernel -IC:/Users/nicolas/Desktop/kdemulator/emu-stubs -IC:/Users/nicolas/Desktop/kdemulator/emu-core/external/unicorn/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-src/dependencies/zycore/include -IC:/Users/nicolas/Desktop/kdemulator/build/_deps/zydis-build/zycore -isystem C:/Users/nicolas/Desktop/kdemulator/build/_deps/ftxui-src/include -g -std=c++20 -o CMakeFiles\\kdemulator.dir\\emu-stubs\\scripting\\ScriptingEngine.cpp.obj -c C:\\Users\\nicolas\\Desktop\\kdemulator\\emu-stubs\\scripting\\ScriptingEngine.cpp",
   "file": "C:/Users/nicolas/Desktop/kdemulator/emu-stubs/scripting/ScriptingEngine.cpp",
   "output": "C:/Users/nicolas/Desktop/kdemulator/build/CMakeFiles/kdemulator.dir/emu-stubs/scripting/ScriptingEngine.cpp.obj"

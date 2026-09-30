@@ -78,6 +78,13 @@ void map_stack_and_heap(CPU* cpu){
     Debug::debug_msg("Stack and heap mapped", LOG_INFO);
 }
 
+void allocate_fake_kernel_data(CPU* cpu) {
+    cpu->mem_map(FAKE_KERNEL_DATA_BASE, FAKE_KERNEL_DATA_SIZE, PROT_READ | PROT_WRITE);
+    uint8_t zeroes[0x100] = {};
+    cpu->mem_write(FAKE_KERNEL_DATA_BASE, zeroes, sizeof(zeroes));
+    Debug::debug_msg("Fake kernel data region mapped at " + hex64(FAKE_KERNEL_DATA_BASE), LOG_INFO);
+}
+
 void set_rbp_rsp(CPU* cpu){
     cpu->set_register(REG_RSP, STACK_BASE + STACK_SIZE - 0x1000);
     cpu->set_register(REG_RBP, STACK_BASE + STACK_SIZE - 0x1000);
@@ -101,6 +108,7 @@ bool Emulator::start(PE* pe){
     set_entry_point(this->cpu, pe);
     allocate_kuser(this->cpu);
     allocate_driver_object(this->cpu, pe);
+    allocate_fake_kernel_data(this->cpu);
     security_cookie_patch(this->cpu, pe);
 
     addCodeHookCallback(this->cpu, pe, &this->disasm);

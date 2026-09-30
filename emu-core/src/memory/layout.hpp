@@ -40,7 +40,11 @@
 
 // hooks
 #define HOOK_TRAP_BASE          0x0000000020000000ULL
-#define HOOK_TRAP_SIZE          0x1000
+#define HOOK_TRAP_SIZE          0x10000
+
+// fake kernel data objects (IoDeviceObjectType, PsProcessType, etc.)
+#define FAKE_KERNEL_DATA_BASE   0x0000000050000000ULL
+#define FAKE_KERNEL_DATA_SIZE   0x1000
 
 // device object layout offsets
 #define OFF_DEVOBJ  0x000

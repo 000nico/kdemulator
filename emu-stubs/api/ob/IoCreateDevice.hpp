@@ -3,6 +3,8 @@
 #include "../emu-core/src/kernel/include/structs.hpp"
 #include "../emu-core/src/memory/layout.hpp"
 #include "../emu-core/src/cpu/perms.hpp"
+#include "../../../emu-core/src/debug/Debug.hpp"
+#include "../../../sdk/hex.hpp"
 
 class ApiIoCreateDevice : public Api {
 public:
@@ -17,6 +19,10 @@ public:
 
         uint32_t total = sizeof(DEVICE_OBJECT) + device_extension_size;
         cpu->mem_map(DEVICE_BASE, (total + 0xFFF) & ~0xFFF, PROT_READ | PROT_WRITE);
+
+        std::string dev_name = read_unicode_string(cpu, device_name_ptr);
+        Debug::debug_msg("[IoCreateDevice] drv=" + hex64(driver_object_addr) +
+                         " name=\"" + dev_name + "\" extSize=" + std::to_string(device_extension_size), LOG_INFO);
 
         uint64_t devobj_addr = DEVICE_BASE + OFF_DEVOBJ; 
         uint64_t devext_addr = DEVICE_BASE + OFF_DEVEXT;

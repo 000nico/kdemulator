@@ -56,7 +56,7 @@ void free_mem(uint64_t address){
     bool found = false;
     int i = 0;
     
-    while(found == false && i <= activeAllocations.size()){
+    while(found == false && i < activeAllocations.size()){
         if(activeAllocations[i].address == address){
             found = true;
             break;
