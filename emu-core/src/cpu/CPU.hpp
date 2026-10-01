@@ -34,6 +34,7 @@ class CPU {
         // cpu
         virtual CpuStatus step_cpu() = 0;
         virtual bool start(uintptr_t address) = 0;
+        virtual void stop() = 0;
 
         // hooking
         virtual bool add_code_hook(uint64_t begin, uint64_t end, CodeHookFn callback, void* user_data) = 0;

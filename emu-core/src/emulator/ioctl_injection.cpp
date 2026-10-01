@@ -1,11 +1,15 @@
 #include "../pe/format.hpp"
 #include "../cpu/CPU.hpp"
+#include "../cpu/perms.hpp"
 #include "../debug/Debug.hpp"
 #include "../memory/layout.hpp"
 #include "../disasm/Disasm.hpp" 
 #include "../sdk/hex.hpp"
 #include "ioctl_injection.hpp"
 #include "../kernel/include/structs.hpp"
+
+constexpr uint64_t DISPATCH_RETURN_SENTINEL = 0xFFFFDEAD00000001ULL;
+static bool g_dispatch_sentinel_mapped = false;
 
 void dump_dispatch_table(CPU* cpu);
 
@@ -60,19 +64,88 @@ void add_hook_on_driver_entry_ret(CPU* cpu, uint64_t address) {
     cpu->add_code_hook(address, address, driver_entry_ret_callback, 0);
 }
 
+static uint64_t g_dispatch_table[27] = {0};
+
 void dump_dispatch_table(CPU* cpu) {
     DRIVER_OBJECT driver_object = {};
-    //Debug::debug_msg("sizeof(DRIVER_OBJECT) = " + std::to_string(sizeof(DRIVER_OBJECT)), LOG_INFO);
     if(!cpu->mem_read(STRUCT_BASE, &driver_object, sizeof(DRIVER_OBJECT))){
         Debug::debug_msg("could not read driver object", LOG_ERROR);
+        return;
     }
 
     for(int i = 0; i < 27; i++) {
+        g_dispatch_table[i] = (uint64_t)driver_object.MajorFunction[i]; 
+
         if(driver_object.MajorFunction[i] == 0)
             continue;
 
-        else {
-            Debug::debug_msg("Major function [" + std::to_string(i) + "]" + " = " + IrpMjNames[i]  + " = " + hex64((uint64_t)driver_object.MajorFunction[i]), LOG_INFO);
-        }
+        Debug::debug_msg("Major function [" + std::to_string(i) + "]" + " = " + IrpMjNames[i]  + " = " + hex64((uint64_t)driver_object.MajorFunction[i]), LOG_INFO);
     }
+}
+
+uint64_t get_major_function(int irp_mj_index) {
+    return g_dispatch_table[irp_mj_index];
+}
+
+uint64_t build_irp(CPU* cpu, uint32_t ioctl_code, void* input_data, size_t input_len, size_t output_len) {
+    // io_stack_location HEAP_BASE
+    IO_STACK_LOCATION isl = {};
+    isl.MajorFunction = 0x0E; // IRP_MJ_DEVICE_CONTROL
+    isl.IoControlCode = ioctl_code;
+    isl.OutputBufferLength = static_cast<uint32_t>(output_len);
+    isl.InputBufferLength = static_cast<uint32_t>(input_len);
+    if(!cpu->mem_write(HEAP_BASE, &isl, sizeof(IO_STACK_LOCATION)))
+        Debug::debug_msg("build_irp: failed writing IO_STACK_LOCATION", LOG_ERROR);
+
+    if (input_data != nullptr && input_len > 0) {
+        if(!cpu->mem_write(HEAP_BASE + 0x450, input_data, input_len))
+            Debug::debug_msg("build_irp: failed writing input buffer", LOG_ERROR);
+    }
+
+    IRP irp = {};
+    irp.Tail_Overlay_CurrentStackLocation = HEAP_BASE;          
+    irp.AssociatedIrp_SystemBuffer        = HEAP_BASE + 0x450;  
+    if(!cpu->mem_write(HEAP_BASE + 0x48, &irp, sizeof(IRP)))
+        Debug::debug_msg("build_irp: failed writing IRP", LOG_ERROR);
+
+    return HEAP_BASE + 0x48; 
+}
+
+void dispatch_ret_callback(CPU* cpu, uint64_t address, void* user_data) {
+    uint64_t rax = cpu->get_register(REG_RAX);
+    Debug::debug_msg("Dispatch routine returned, NTSTATUS = " + hex64((uint64_t)(uint32_t)rax), LOG_INFO);
+    cpu->stop();
+}
+
+void invoke_major_function(CPU* cpu, uint32_t ioctl_code, void* input_data, size_t input_len, size_t output_len) {
+    uint64_t target = get_major_function(0x0E);
+    if (target == 0) {
+        Debug::debug_msg("MajorFunction[DEVICE_CONTROL] is null, nothing to call", LOG_ERROR);
+        return;
+    }
+
+    uint64_t irp_addr = build_irp(cpu, ioctl_code, input_data, input_len, output_len);
+
+    if (!g_dispatch_sentinel_mapped) {
+        uint64_t page = DISPATCH_RETURN_SENTINEL & ~0xFFFULL;
+        cpu->mem_map(page, 0x1000, PROT_READ | PROT_EXEC);
+
+        uint8_t hlt = 0xF4;
+        cpu->mem_write(DISPATCH_RETURN_SENTINEL, &hlt, 1);
+
+        cpu->add_code_hook(DISPATCH_RETURN_SENTINEL, DISPATCH_RETURN_SENTINEL, dispatch_ret_callback, nullptr);
+        g_dispatch_sentinel_mapped = true;
+    }
+
+    uint64_t rsp = cpu->get_register(REG_RSP);
+    rsp -= 8;
+
+    uint64_t sentinel_value = DISPATCH_RETURN_SENTINEL;
+    cpu->mem_write(rsp, &sentinel_value, sizeof(sentinel_value));
+    cpu->set_register(REG_RSP, rsp);
+
+    cpu->set_register(REG_RCX, STRUCT_BASE + OFF_DEVOBJ);
+    cpu->set_register(REG_RDX, irp_addr);
+
+    cpu->start(target);
 }

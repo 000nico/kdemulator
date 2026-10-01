@@ -39,6 +39,7 @@ class UnicornEngine : public CPU {
         // execution
         CpuStatus step_cpu();
         bool start(uintptr_t address);
+        void stop();
     
     private:
         uc_engine* uc;

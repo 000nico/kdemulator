@@ -274,6 +274,85 @@ struct KUSER_SHARED_DATA {
 
 #pragma pack(pop)
 
+#pragma pack(push, 1) 
+
+struct IO_STACK_LOCATION {
+    uint8_t  MajorFunction;        // +0x00  -- IRP_MJ_DEVICE_CONTROL = 0x0E, etc.
+    uint8_t  MinorFunction;        // +0x01
+    uint8_t  Flags;                // +0x02
+    uint8_t  Control;              // +0x03
+    uint32_t _pad0;                // +0x04  
+
+    // === union Parameters (offset +0x08) ===
+    uint32_t OutputBufferLength;   // +0x08  Parameters.DeviceIoControl.OutputBufferLength
+    uint32_t POINTER_ALIGNMENT;    // +0x0C  (padding real que usa el compilador acá)
+    uint32_t InputBufferLength;    // +0x10  Parameters.DeviceIoControl.InputBufferLength
+    uint32_t _pad1;                // +0x14
+    uint32_t IoControlCode;        // +0x18  Parameters.DeviceIoControl.IoControlCode
+    uint32_t _pad2;                // +0x1C
+    uint64_t Type3InputBuffer;     // +0x20  Parameters.DeviceIoControl.Type3InputBuffer (METHOD_NEITHER)
+    // === fin union ===
+
+    uint64_t DeviceObject;         // +0x28  PDEVICE_OBJECT
+    uint64_t FileObject;           // +0x30  PFILE_OBJECT
+    uint64_t CompletionRoutine;    // +0x38  PIO_COMPLETION_ROUTINE
+    uint64_t Context;              // +0x40
+};
+// sizeof(IO_STACK_LOCATION) == 0x48 
+
+#pragma pack(pop)
+
+#pragma pack(push, 1)
+
+struct IRP {
+    uint16_t Type;                     // +0x00  = 6 (IO_TYPE_IRP)
+    uint16_t Size;                     // +0x02  = sizeof(IRP) + N * sizeof(IO_STACK_LOCATION)
+    uint32_t _pad0;                    // +0x04
+
+    uint64_t MdlAddress;               // +0x08  PMDL, usado en METHOD_IN/OUT_DIRECT
+    uint32_t Flags;                    // +0x10  IRP_BUFFERED_IO, IRP_INPUT_OPERATION, etc.
+    uint32_t _pad1;                    // +0x14
+
+    uint64_t AssociatedIrp_SystemBuffer; // +0x18  AssociatedIrp.SystemBuffer -- METHOD_BUFFERED
+
+    // ThreadListEntry (LIST_ENTRY, 16 bytes) -- no la necesitás simular
+    uint64_t ThreadListEntry_Flink;    // +0x20
+    uint64_t ThreadListEntry_Blink;    // +0x28
+
+    // IoStatus (IO_STATUS_BLOCK, 16 bytes) -- ESTO SÍ LO NECESITÁS
+    int64_t  IoStatus_Status;          // +0x30  NTSTATUS 
+    uint64_t IoStatus_Information;     // +0x38 
+
+    uint8_t  RequestorMode;            // +0x40  KernelMode = 0, UserMode = 1
+    uint8_t  PendingReturned;          // +0x41
+    uint8_t  StackCount;               // +0x42
+    uint8_t  CurrentLocation;          // +0x43
+    uint8_t  Cancel;                   // +0x44
+    uint8_t  CancelIrql;               // +0x45
+    uint8_t  ApcEnvironment;           // +0x46
+    uint8_t  AllocationFlags;          // +0x47
+
+    uint64_t UserIosb;                 // +0x48  PIO_STATUS_BLOCK 
+    uint64_t UserEvent;                // +0x50  PKEVENT
+    uint64_t Overlay_AsynchronousParameters_UserApcRoutine; // +0x58 
+    uint64_t Overlay_AllocationSize_or_ApcContext;          // +0x60
+
+    uint64_t CancelRoutine;            // +0x68  PDRIVER_CANCEL
+    uint64_t UserBuffer;               // +0x70  PVOID -- METHOD_NEITHER
+
+    // Tail.Overlay -- ponmting to active IO_STACK_LOCATION 
+    uint64_t Tail_Overlay_DeviceQueueEntry_or_DriverContext[4]; // +0x78 (unión, 32 bytes)
+    uint64_t Tail_Overlay_Thread;                                // +0x98
+    uint64_t Tail_Overlay_AuxiliaryBuffer;                       // +0xA0
+    uint64_t Tail_Overlay_ListEntry_Flink;                       // +0xA8
+    uint64_t Tail_Overlay_ListEntry_Blink;                       // +0xB0
+    uint64_t Tail_Overlay_CurrentStackLocation;                  // +0xB8  <-- PIO_STACK_LOCATION,
+    uint64_t Tail_Overlay_OriginalFileObject;                    // +0xC0
+};
+// sizeof(IRP) real == 0xD0 but we could use a bit of margin
+
+#pragma pack(pop)
+
 inline KUSER_SHARED_DATA* const UserSharedData =
     reinterpret_cast<KUSER_SHARED_DATA*>(0x7FFE0000);
 

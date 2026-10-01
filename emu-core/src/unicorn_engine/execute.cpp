@@ -30,3 +30,7 @@ bool UnicornEngine::start(uintptr_t address){
     Debug::debug_msg("execute: emulation finished OK\n", LOG_INFO);
     return true;
 }
+
+void UnicornEngine::stop() {
+    uc_emu_stop(this->uc);
+}

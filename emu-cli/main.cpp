@@ -1,5 +1,6 @@
 #include "../emu-core/src/emulator/Emulator.hpp"
 #include "../emu-core/src/unicorn_engine/UnicornEngine.hpp"
+#include "../emu-core/src/emulator/ioctl_injection.hpp"
 #include "src/out/Output.hpp"
 #include "src/in/Input.hpp"
 #include <sstream>
@@ -25,6 +26,9 @@ int main() {
             Debug::debug_msg("=== Available Commands ===\n", LOG_INFO);
             Debug::debug_msg("  /load <path>  - Load .sys driver file into memory\n", LOG_INFO);
             Debug::debug_msg("  /start        - Start driver execution from EntryPoint\n", LOG_INFO);
+            Debug::debug_msg("  /ioctl <code> [hex_bytes...] - Inject an IOCTL into IRP_MJ_DEVICE_CONTROL\n", LOG_INFO);
+            Debug::debug_msg("                  <code>       : IOCTL code (hex 0x... or decimal)\n", LOG_INFO);
+            Debug::debug_msg("                  [hex_bytes]  : optional input buffer bytes (e.g. DEADBEEF)\n", LOG_INFO);
             Debug::debug_msg("  /step         - Execute a single CPU instruction\n", LOG_INFO);
             Debug::debug_msg("  /regs         - Refresh registers on screen\n", LOG_INFO);
             Debug::debug_msg("  /trace        - Toggle trace mode (on/off)\n", LOG_INFO);
@@ -104,6 +108,75 @@ int main() {
         else if (cmd == "/regs") {
             output.refresh();
             Debug::debug_msg("Registers refreshed.\n", LOG_INFO);
+        }
+        else if (cmd == "/ioctl") {
+            if (!pe_loaded) {
+                Debug::debug_msg("Cannot inject IOCTL: no driver loaded. Use '/load <path.sys>' and '/start' first.\n", LOG_ERROR);
+                return;
+            }
+
+            // --- Parse IOCTL code (mandatory) ---
+            std::string code_str;
+            iss >> code_str;
+            if (code_str.empty()) {
+                Debug::debug_msg("Usage: /ioctl <code> [hex_bytes...]\n", LOG_ERROR);
+                Debug::debug_msg("  <code>      : IOCTL code in hex (0x...) or decimal\n", LOG_ERROR);
+                Debug::debug_msg("  [hex_bytes] : optional input buffer as a hex string (e.g. DEADBEEF 0102)\n", LOG_ERROR);
+                return;
+            }
+
+            uint32_t ioctl_code = 0;
+            try {
+                ioctl_code = static_cast<uint32_t>(std::stoull(code_str, nullptr, 0));
+            } catch (...) {
+                Debug::debug_msg("Invalid IOCTL code: '" + code_str + "'. Use hex (0x...) or decimal.\n", LOG_ERROR);
+                return;
+            }
+
+            // --- Parse optional input buffer (hex tokens) ---
+            std::vector<uint8_t> input_buf;
+            std::string hex_token;
+            while (iss >> hex_token) {
+                // Accept tokens with or without 0x prefix; strip it if present
+                std::string raw = hex_token;
+                if (raw.size() >= 2 && raw[0] == '0' && (raw[1] == 'x' || raw[1] == 'X'))
+                    raw = raw.substr(2);
+
+                if (raw.empty() || raw.size() % 2 != 0) {
+                    Debug::debug_msg("Bad hex token '" + hex_token + "': must be an even number of hex digits (e.g. DEADBEEF).\n", LOG_ERROR);
+                    return;
+                }
+                for (size_t i = 0; i < raw.size(); i += 2) {
+                    try {
+                        uint8_t byte = static_cast<uint8_t>(std::stoul(raw.substr(i, 2), nullptr, 16));
+                        input_buf.push_back(byte);
+                    } catch (...) {
+                        Debug::debug_msg("Invalid hex byte in token '" + hex_token + "'.\n", LOG_ERROR);
+                        return;
+                    }
+                }
+            }
+
+            constexpr size_t DEFAULT_OUTPUT_LEN = 0x1000;
+
+            Debug::debug_msg(
+                "Injecting IOCTL 0x" + [&]{
+                    std::ostringstream ss; ss << std::hex << std::uppercase << ioctl_code; return ss.str();
+                }() +
+                " | input_len=" + std::to_string(input_buf.size()) +
+                " | output_len=" + std::to_string(DEFAULT_OUTPUT_LEN) + "\n",
+                LOG_INFO
+            );
+
+            invoke_major_function(
+                &cpu,
+                ioctl_code,
+                input_buf.empty() ? nullptr : input_buf.data(),
+                input_buf.size(),
+                DEFAULT_OUTPUT_LEN
+            );
+
+            output.refresh();
         }
         else if (cmd == "/exit" || cmd == "/quit") {
             output.screen.ExitLoopClosure()();
