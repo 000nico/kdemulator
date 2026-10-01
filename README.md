@@ -34,12 +34,8 @@ Running a real driver against a real Windows kernel for fuzzing requires a VM, s
 The project is split into three crates, each documented separately:
 
 * [`emu-core`](./emu-core.md) — the emulation engine: PE mapping, Unicorn wrapper, kernel structs, IRQL/SEH bookkeeping.
-* [`emu-stubs`](./emu-stubs.md) — implementations of NT API functions, in Rust by default, with an optional Python fallback for functions not covered natively.
+* [`emu-stubs`](./emu-stubs.md) — implementations of NT API functions, in C++ by default.
 * [`emu-cli`](./emu-cli.md) — the command-line executable that ties the above together.
-
-## Design principle: C++ first, Python as fallback
-
-Common NT API functions (`ExAllocatePoolWithTag`, `RtlCopyMemory`, `IoCreateDevice`, etc.) are implemented natively in C++ for speed and to keep the tool usable without any scripting setup. When a driver imports a function that isn't covered, instead of requiring a C++ change and a recompile, a user can drop in a Python file implementing just that function. The emulator only starts a Python interpreter if a stub actually falls back to it; drivers that only use already-covered functions never touch Python.
 
 ## Known limitations
 
