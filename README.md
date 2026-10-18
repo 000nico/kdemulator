@@ -44,6 +44,14 @@ The project is split into three crates, each documented separately:
 * Hardware-facing drivers (MMIO, port I/O, real PCI config space) require additional stubs not covered by default.
 * Fidelity is scoped to what's needed for IOCTL-level analysis and fuzzing, not general-purpose kernel emulation.
 
+
+## To do
+
+* Add a system where the registry keys are stored in files and folders
+* Replace Unicorn with Windows Hypervisor Platform
+* Add tools for devirtualization
+
+
 ## Why am i doing this
 
 God had no hand in the creation of this abhorrence. The fact that this monolith exists proves that god is either impotent to alter his universe or ignorant to the horrors taking place in his Kingdom
