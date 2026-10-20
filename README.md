@@ -50,6 +50,7 @@ The project is split into three crates, each documented separately:
 * Add a system where the registry keys are stored in files and folders
 * Replace Unicorn with Windows Hypervisor Platform
 * Add tools for devirtualization
+* Add support for usermode part, dll part and proper communication
 
 
 ## Why am i doing this
